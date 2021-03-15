@@ -1308,7 +1308,7 @@ public class PeerConnectionClient {
       }
       String sdp = desc.description;
       if (preferIsac) {
-        sdp = preferCodec(sdp, AUDIO_CODEC_ISAC, true);
+        sdp = preferCodec(sdp, AUDIO_CODEC_OPUS, true);
       }
       if (isVideoCallEnabled()) {
         sdp = preferCodec(sdp, getSdpVideoCodecName(peerConnectionParameters), false);
